@@ -1,0 +1,19 @@
+/* LandingPage.css */
+
+.card-header.bg-danger {
+  background: linear-gradient(135deg, #c82333, #e63946);
+}
+
+.card-header.bg-dark {
+  background: linear-gradient(135deg, #212529, #343a40);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2);
+}
