@@ -15,7 +15,7 @@ const JobPostingsPage = () => {
     const params = new URLSearchParams(location.search);
     const jobType = params.get('type'); // Get the 'type' query parameter
 
-    axios.get("http://localhost:8081/api/post/visible")
+    axios.get("http://https://b-t-backend-production.up.railway.app/api/post/visible")
       .then((res) => {
         let filteredPosts = res.data;
         if (jobType) {
