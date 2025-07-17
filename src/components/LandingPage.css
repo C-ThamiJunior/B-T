@@ -1,5 +1,6 @@
-/* LandingPage.css */
-
+.card-body .btn {
+  margin-bottom: 20px; 
+}
 .card-header.bg-danger {
   background: linear-gradient(135deg, #c82333, #e63946);
 }
@@ -16,4 +17,24 @@
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+
+.card-header {
+  min-height: 200px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header svg {
+  margin-top: 0.5rem; 
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }

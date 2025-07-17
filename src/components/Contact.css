@@ -1,0 +1,117 @@
+.contact-page {
+  display: flex;
+  min-height: 100vh;
+  background: url('/A diverse group of p.png') center/cover no-repeat;
+  position: relative;
+  padding: 2rem;
+  gap: 25rem;
+}
+
+/* MINI RED ICON BAR WITH BLUR */
+.contact-sidebar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.sidebar-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #c8102e; 
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.sidebar-text {
+  position: absolute;
+  left: 60px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-item:hover .sidebar-text {
+  opacity: 1;
+}
+
+/* BLURRED GLASS FORM CONTAINER */
+.blurred-form {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  padding: 3rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+}
+
+/* FORM STYLING */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+form img {
+  max-width: 200px;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+
+form input,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2.5rem;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #c8102e; /* Red on focus */
+  outline: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #666;
+}
+
+form button {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.75rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
