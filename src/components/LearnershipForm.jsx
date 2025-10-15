@@ -50,7 +50,7 @@ const LearnershipForm = () => {
   });
 
   try {
-    const response = await fetch("http://localhost:8081/api/post/apply", {
+    const response = await fetch("https://b-t-backend.onrender.com/api/post/apply", {
       method: "POST",
       body: formData,
     });
